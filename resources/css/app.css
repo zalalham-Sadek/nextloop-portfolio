@@ -1,0 +1,172 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Cairo', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Apply Cairo font globally */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Animations */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Writing Mode for Vertical Text */
+.writing-vertical-rl {
+    writing-mode: vertical-rl;
+}
+
+/* RTL Support */
+.rtl {
+    direction: rtl;
+}
+
+/* Counter Animation */
+.counter {
+    transition: all 0.3s ease;
+}
+
+/* Service Tags Scrolling Animation */
+.service-tags-scroll {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.service-tags-container {
+    display: flex;
+    animation: scroll-tags 20s linear infinite;
+    will-change: transform;
+}
+
+/* RTL Support for scrolling */
+.rtl-scroll,
+.rtl .service-tags-container,
+[dir="rtl"] .service-tags-container {
+    animation: scroll-tags-rtl 20s linear infinite;
+}
+
+@keyframes scroll-tags {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-tags-rtl {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Pause on hover */
+.service-tags-scroll:hover .service-tags-container {
+    animation-play-state: paused;
+}
+
+/* Pop Up Animation for About Section Labels */
+@keyframes pop-up {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+.pop-up-animation {
+    animation: pop-up 2s ease-in-out infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pop-up-animation:hover {
+    transform: scale(1.2) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Team Social Icons Animation */
+.tp-team-it-socials-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.tp-team-it-item:hover .tp-team-it-socials-wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.tp-team-it-socials-share {
+    transition: transform 0.3s ease;
+}
+
+.tp-team-it-item:hover .tp-team-it-socials-share {
+    transform: rotate(180deg);
+}
+.tp-team-it-socials-trigger::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 8px;
+    height: 40px;
+    width: 20px;
+    right: calc(100% - 1px);
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 20px 0 0 #ffffff;
+}
+
+.tp-team-it-socials-trigger::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 19px;
+    height: 40px;
+    width: 25px;
+    left: calc(100% - 2px);
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 20px 0 0 #ffffff;
+}
