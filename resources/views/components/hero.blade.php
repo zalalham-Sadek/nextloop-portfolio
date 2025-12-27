@@ -30,7 +30,6 @@
                     </div>
                     <div class="text-base text-[#2d5016]">
                         <div>{{ __('messages.projects_completed') }}</div>
-                        <div class="font-medium">{{ __('messages.countries') }}</div>
                     </div>
                 </div>
 
@@ -77,7 +76,6 @@
                         </div>
                         <div class="text-lg xl:text-xl text-[#2d5016]">
                             <div>{{ __('messages.projects_completed') }}</div>
-                            <div class="font-medium">{{ __('messages.countries') }}</div>
                         </div>
                     </div>
 

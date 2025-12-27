@@ -15,16 +15,16 @@ return [
     // Hero Section
     'hero_title_part1' => 'Developing Future-',
     'hero_title_part2' => 'Ready *It Solutions*',
-    'projects_completed' => 'Project Completed In',
+    'projects_completed' => 'Project Completed ',
     'countries' => '.Countries 25',
     'clients_satisfied' => 'Clients Satisfied And',
     'repeating' => '.Repeating',
 
     // Information Section
     'information' => 'INFORMATION',
-    'phone' => '778826095',
+    'phone' => '778826095, 775396896',
     'email' => 'hello@NEXTLOOP.com',
-    'address' => 'Avenue de Roma 158b, Lisboa',
+    'address' => 'Yemen , Taiz',
 
     // Follow Us
     'follow_us' => 'FOLLOW US',
@@ -125,7 +125,7 @@ return [
     'copyright' => 'Copyright',
     'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'All rights reserved.',
-    
+
     // Dashboard
     'dashboard' => 'Dashboard',
     'projects' => 'Projects',
@@ -151,13 +151,13 @@ return [
     'current_image' => 'Current Image',
     'new_image' => 'New Image',
     'switch_language' => 'Switch Language',
-    
+
     // Navigation
     'home' => 'Home',
     'about' => 'About',
     'services' => 'Services',
     'team' => 'Team',
-    
+
     // Services Management
     'services_management' => 'Services Management',
     'all_services' => 'All Services',
@@ -183,7 +183,7 @@ return [
     'service_created_successfully' => 'Service created successfully.',
     'service_updated_successfully' => 'Service updated successfully.',
     'service_deleted_successfully' => 'Service deleted successfully.',
-    
+
     // Projects Management Multilingual
     'type_en' => 'Type (English)',
     'type_ar' => 'Type (Arabic)',

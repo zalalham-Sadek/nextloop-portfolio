@@ -15,16 +15,16 @@ return [
     // Hero Section
     'hero_title_part1' => 'تطوير حلول',
     'hero_title_part2' => 'تقنية *جاهزة للمستقبل*',
-    'projects_completed' => 'مشروع مكتمل في',
+    'projects_completed' => 'مشروع مكتمل ',
     'countries' => '.25 دولة',
     'clients_satisfied' => 'عملاء راضون و',
     'repeating' => '.يعودون',
 
     // Information Section
     'information' => 'معلومات التواصل',
-    'phone' => '778826095',
+    'phone' => '778826095, 775396896',
     'email' => 'hello@NEXTLOOP.com',
-    'address' => 'Taiz , Yemen',
+    'address' => 'اليمن , تيز',
 
     // Follow Us
     'follow_us' => 'تابعنا',
@@ -125,7 +125,7 @@ return [
     'copyright' => 'حقوق النشر',
     'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'جميع الحقوق محفوظة.',
-    
+
     // Dashboard
     'dashboard' => 'لوحة التحكم',
     'projects' => 'المشاريع',
@@ -151,13 +151,13 @@ return [
     'current_image' => 'الصورة الحالية',
     'new_image' => 'صورة جديدة',
     'switch_language' => 'تبديل اللغة',
-    
+
     // Navigation
     'home' => 'الرئيسية',
     'about' => 'من نحن',
     'services' => 'الخدمات',
     'team' => 'الفريق',
-    
+
     // Services Management
     'services_management' => 'إدارة الخدمات',
     'all_services' => 'جميع الخدمات',
@@ -183,7 +183,7 @@ return [
     'service_created_successfully' => 'تم إنشاء الخدمة بنجاح.',
     'service_updated_successfully' => 'تم تحديث الخدمة بنجاح.',
     'service_deleted_successfully' => 'تم حذف الخدمة بنجاح.',
-    
+
     // Projects Management Multilingual
     'type_en' => 'النوع (الإنجليزية)',
     'type_ar' => 'النوع (العربية)',
