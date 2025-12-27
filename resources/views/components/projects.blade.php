@@ -26,9 +26,9 @@
                                     data-index="{{ $index }}"
                                     style="opacity: {{ $index === 0 ? 1 : max(0.4, 1 - ($index * 0.2)) }};">
                                    <!-- Project Image -->
-                                   <div class="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300">
+                                   <div class="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
                                        @if($project->image)
-                                           <img src="{{ \Illuminate\Support\Facades\Storage::url($project->image) }}" alt="{{ $project->name }}" class="w-full h-full object-cover">
+                                           <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-full h-full object-cover" onerror="this.src=''; this.parentElement.innerHTML='<div class=\'w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center\'><i class=\'fas fa-image text-gray-400 text-4xl\'></i></div>'">
                                        @else
                                            <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                                                <i class="fas fa-image text-gray-400 text-4xl"></i>

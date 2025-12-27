@@ -22,6 +22,9 @@
                 <a href="{{ route('admin.projects.index') }}" class="block px-4 py-2 rounded-lg bg-[#1a3a0e] transition-colors">
                     <i class="fas fa-folder mr-2"></i> {{ __('messages.projects') }}
                 </a>
+                <a href="{{ route('admin.services.index') }}" class="block px-4 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors">
+                    <i class="fas fa-concierge-bell mr-2"></i> {{ __('messages.services') }}
+                </a>
                 <a href="{{ route('welcome') }}" class="block px-4 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors">
                     <i class="fas fa-globe mr-2"></i> {{ __('messages.view_site') }}
                 </a>
@@ -63,7 +66,7 @@
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             @if($project->image)
-                                                <img src="{{ \Illuminate\Support\Facades\Storage::url($project->image) }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded">
+                                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded" onerror="this.src=''; this.parentElement.innerHTML='<div class=\'w-16 h-16 bg-gray-200 rounded flex items-center justify-center\'><i class=\'fas fa-image text-gray-400\'></i></div>'">
                                             @else
                                                 <div class="w-16 h-16 bg-gray-200 rounded flex items-center justify-center">
                                                     <i class="fas fa-image text-gray-400"></i>
@@ -72,6 +75,7 @@
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="text-sm font-medium text-gray-900">{{ $project->name }}</div>
+                                            <div class="text-xs text-gray-500">{{ $project->name_en ?? '' }} / {{ $project->name_ar ?? '' }}</div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="text-sm text-gray-500">{{ $project->type ?? '-' }}</div>

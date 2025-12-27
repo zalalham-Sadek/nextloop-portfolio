@@ -32,11 +32,14 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'name_en' => 'required|string|max:255',
+            'name_ar' => 'nullable|string|max:255',
+            'description_en' => 'required|string',
+            'description_ar' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'link' => 'nullable|url',
-            'type' => 'nullable|string|max:255',
+            'type_en' => 'nullable|string|max:255',
+            'type_ar' => 'nullable|string|max:255',
             'order' => 'nullable|integer',
         ]);
 
@@ -47,7 +50,7 @@ class ProjectController extends Controller
         Project::create($validated);
 
         return redirect()->route('admin.projects.index')
-            ->with('success', 'Project created successfully.');
+            ->with('success', __('messages.project_created_successfully'));
     }
 
     /**
@@ -72,11 +75,14 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'name_en' => 'required|string|max:255',
+            'name_ar' => 'nullable|string|max:255',
+            'description_en' => 'required|string',
+            'description_ar' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'link' => 'nullable|url',
-            'type' => 'nullable|string|max:255',
+            'type_en' => 'nullable|string|max:255',
+            'type_ar' => 'nullable|string|max:255',
             'order' => 'nullable|integer',
         ]);
 
@@ -91,7 +97,7 @@ class ProjectController extends Controller
         $project->update($validated);
 
         return redirect()->route('admin.projects.index')
-            ->with('success', 'Project updated successfully.');
+            ->with('success', __('messages.project_updated_successfully'));
     }
 
     /**
