@@ -10,7 +10,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-start">
             <!-- Left Side: Text and Button -->
             <div class="space-y-8">
-               
+
 
                 <!-- Main Heading -->
                 <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2d5016] leading-tight">
@@ -34,7 +34,7 @@
             <!-- Right Side: Team Members -->
             <div class="relative">
                 <!-- Team Cards Container -->
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Team Member 1: Dianne M. Mason -->
                     <div class="tp-team-it-item bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group mb-12">
                         <a href="#" class="tp-team-it-thumb block relative overflow-hidden">
