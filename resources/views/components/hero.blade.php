@@ -140,13 +140,11 @@
                 <i class="fab fa-facebook-f text-lg"></i>
             </a>
             <!-- Pinterest Icon -->
-            <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Pinterest">
-                <i class="fab fa-pinterest-p text-lg"></i>
-            </a>
+            <a href="mailto:zalalham.sadeq@gmail.com" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Pinterest">
+                <i class="fa-solid fa-envelope text-lg"></i>            </a>
             <!-- Behance Icon -->
-            <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Behance">
-                <i class="fab fa-behance text-lg"></i>
-            </a>
+            <a href="tel:+967778826095" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Behance">
+                <i class="fa-solid fa-phone text-lg"></i>            </a>
             <!-- LinkedIn Icon -->
             <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in text-lg"></i>

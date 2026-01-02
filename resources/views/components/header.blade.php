@@ -33,8 +33,8 @@
         <!-- Right Side: Language Switcher (Desktop) & Logo -->
         <div class="flex items-center gap-4">
             <!-- Language Switcher (Desktop Only) -->
-            <a href="{{ route('language.switch', app()->getLocale() === 'ar' ? 'en' : 'ar') }}" 
-               class="hidden lg:flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-[#2d5016] hover:bg-gray-100 transition-all" 
+            <a href="{{ route('language.switch', app()->getLocale() === 'ar' ? 'en' : 'ar') }}"
+               class=" flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-[#2d5016] hover:bg-gray-100 transition-all"
                title="{{ __('messages.switch_language') }}">
                 <i class="fas fa-globe text-lg"></i>
             </a>
@@ -122,10 +122,10 @@
         <h3 class="text-black font-bold uppercase text-sm mb-4">{{ __('messages.information') }}</h3>
         <div class="space-y-3 text-sm text-gray-700">
             <div>
-                <a href="tel:+10077700204" class="underline hover:text-black transition-colors">{{ __('messages.phone') }}</a>
+                <a href="tel:+967778826095" class="underline hover:text-black transition-colors">{{ __('messages.phone') }}</a>
             </div>
             <div>
-                <a href="mailto:hello@NEXTLOOP.com" class="hover:text-black transition-colors">{{ __('messages.email') }}</a>
+                <a href="mailto:zalalham.sadeq@gmail.com" class="hover:text-black transition-colors">{{ __('messages.email') }}</a>
             </div>
             <div>
                 <p>{{ __('messages.address') }}</p>

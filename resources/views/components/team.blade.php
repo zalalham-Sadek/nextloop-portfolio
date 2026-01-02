@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="tp-team-it-socials-wrapper absolute left-0 bottom-full ">
                                     <ul class="tp-team-it-socials-icon bg-[#2d5016] rounded-lg px-2 py-3 flex flex-col gap-3">
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-pinterest text-sm"></i></a></li>
+                                        <li><a href="https://github.com/dalal-abdulghani" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fa-brands fa-github text-sm"></i></a></li></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-instagram text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
@@ -85,10 +85,10 @@
                                 </div>
                                 <div class="tp-team-it-socials-wrapper absolute left-0 bottom-full ">
                                     <ul class="tp-team-it-socials-icon bg-[#2d5016] rounded-lg px-2 py-3 flex flex-col gap-3">
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-pinterest text-sm"></i></a></li>
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
+                                        <li><a href="https://github.com/zalalham-Sadek" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fa-brands fa-github text-sm"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/zalalham-sadeq-07b088342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-instagram text-sm"></i></a></li>
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
+                                        <li><a href="https://www.facebook.com/zalalham.sadeq" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
