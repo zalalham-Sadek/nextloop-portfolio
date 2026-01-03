@@ -24,4 +24,5 @@ Route::prefix('admin')->name('admin.')->group(function () {
     })->name('dashboard');
 
     Route::resource('projects', \App\Http\Controllers\Admin\ProjectController::class);
+    Route::resource('services', \App\Http\Controllers\Admin\ServiceController::class);
 });

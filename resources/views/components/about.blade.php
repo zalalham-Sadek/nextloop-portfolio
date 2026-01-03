@@ -1,63 +1,92 @@
-<section class="relative min-h-screen bg-gradient-to-b from-white to-[#f0f5ec] py-20 overflow-hidden">
+<section class="relative min-h-screen bg-gradient-to-b from-white to-[#f0f5ec] py-12 md:py-20 overflow-hidden">
     <div class="container mx-auto px-4 relative z-10">
         <!-- Main Content Grid -->
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            <!-- Right Side: Graphical Element -->
-            <div class="relative flex items-center justify-center lg:justify-end w-full h-full min-h-[500px]">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-20 items-start">
+            <!-- Mobile: Graphical Element First (Above Text) -->
+            <div class="lg:hidden relative flex items-center justify-center w-full h-full min-h-[250px] md:min-h-[350px] mb-8 order-1">
+                <div class="relative w-full h-full flex items-center justify-center max-w-md mx-auto">
+                    <!-- Plus Sign and Number -->
+                    <div class="relative flex items-center justify-center w-full">
+                        <!-- Plus Sign -->
+                        <div class="relative">
+                            <!-- Horizontal Bar -->
+                            <div class="w-40 md:w-60 h-12 md:h-16 bg-[#2d5016] rounded"></div>
+                            <!-- Vertical Bar -->
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 md:w-13 h-40 md:h-60 bg-[#2d5016] rounded"></div>
+                        </div>
+                        <!-- Number 15 -->
+                        <div class="text-6xl md:text-[10rem] font-bold text-[#2d5016] ml-4 md:ml-8">15</div>
+                    </div>
+
+                    <!-- Labeled Boxes - Pop Up Animation -->
+                    <!-- Optimization (Left of the numbers) -->
+                    <div class="absolute left-[8%] md:left-[10%] top-1/2 transform -translate-y-1/2 px-3 md:px-5 py-1 bg-orange-500 text-white rounded-[20px] font-medium whitespace-nowrap text-sm md:text-lg pop-up-animation" style="animation-delay: 0s;">
+                        {{ __('messages.optimization') }}
+                    </div>
+                    <!-- Evaluation (Above the vertical bar of number 1) -->
+                    <div class="absolute left-[55%] md:left-[60%] top-[35%] transform -translate-x-1/2 -translate-y-1/2 px-3 md:px-5 py-1 bg-green-300 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-sm md:text-lg pop-up-animation" style="animation-delay: 0.2s;">
+                        {{ __('messages.evaluation') }}
+                    </div>
+                    <!-- Consultation (Below the vertical bar of number 1) -->
+                    <div class="absolute left-[40%] md:left-[42%] bottom-[30%] transform -translate-x-1/2 translate-y-1/2 px-3 md:px-5 py-1 bg-lime-400 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-sm md:text-lg pop-up-animation" style="animation-delay: 0.4s;">
+                        {{ __('messages.consultation') }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop: Graphical Element (Right Side) -->
+            <div class="hidden lg:flex relative items-center justify-center lg:justify-end w-full h-full min-h-[500px] order-2">
                 <div class="relative w-full h-full flex items-center justify-center">
                     <!-- Plus Sign and Number -->
                     <div class="relative flex items-center justify-center w-full">
                         <!-- Plus Sign -->
                         <div class="relative">
                             <!-- Horizontal Bar -->
-                            <div class="w-60 md:w-60 h-16 md:h-15 bg-[#2d5016] rounded"></div>
+                            <div class="w-60 h-16 bg-[#2d5016] rounded"></div>
                             <!-- Vertical Bar -->
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-13 md:w-15 h-60 md:h-60 bg-[#2d5016] rounded"></div>
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-15 h-60 bg-[#2d5016] rounded"></div>
                         </div>
                         <!-- Number 15 -->
-                        <div class="text-[10rem] md:text-[14rem] font-bold text-[#2d5016] ml-8 md:ml-12">15</div>
+                        <div class="text-[14rem] font-bold text-[#2d5016] ml-12">15</div>
                     </div>
 
                     <!-- Labeled Boxes - Pop Up Animation -->
                     <!-- Optimization (Left of the numbers) -->
-                    <div class="absolute left-[10%] top-1/2 transform -translate-y-1/2 px-5 py-1 bg-orange-500 text-white rounded-[20px] font-medium whitespace-nowrap text-lg md:text-xl pop-up-animation" style="animation-delay: 0s;">
+                    <div class="absolute left-[10%] top-1/2 transform -translate-y-1/2 px-5 py-1 bg-orange-500 text-white rounded-[20px] font-medium whitespace-nowrap text-xl pop-up-animation" style="animation-delay: 0s;">
                         {{ __('messages.optimization') }}
                     </div>
                     <!-- Evaluation (Above the vertical bar of number 1) -->
-                    <div class="absolute left-[60%] top-[35%] transform -translate-x-1/2 -translate-y-1/2 px-5 py-1 bg-green-300 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-lg md:text-xl pop-up-animation" style="animation-delay: 0.2s;">
+                    <div class="absolute left-[60%] top-[35%] transform -translate-x-1/2 -translate-y-1/2 px-5 py-1 bg-green-300 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-xl pop-up-animation" style="animation-delay: 0.2s;">
                         {{ __('messages.evaluation') }}
                     </div>
                     <!-- Consultation (Below the vertical bar of number 1) -->
-                    <div class="absolute left-[42%] bottom-[30%] transform -translate-x-1/2 translate-y-1/2 px-5 py-1 bg-lime-400 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-lg md:text-xl pop-up-animation" style="animation-delay: 0.4s;">
+                    <div class="absolute left-[42%] bottom-[30%] transform -translate-x-1/2 translate-y-1/2 px-5 py-1 bg-lime-400 text-[#2d5016] rounded-[20px] font-medium whitespace-nowrap text-xl pop-up-animation" style="animation-delay: 0.4s;">
                         {{ __('messages.consultation') }}
                     </div>
                 </div>
             </div>
-            <!-- Left Side: Rating and Testimonial -->
-            <div class="space-y-8">
+
+            <!-- Content Section (Mobile: Below Graphic, Desktop: Left Side) -->
+            <div class="space-y-6 md:space-y-8 order-2 lg:order-1">
                 <!-- Title -->
-                <div class="mb-8">
-                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2d5016]">
+                <div class="mb-6 lg:mb-8">
+                    <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold text-[#2d5016]">
                         {{ __('messages.about_title') }}
                     </h2>
                 </div>
 
                 <!-- Team Description -->
-                <div class="space-y-4 mb-8">
-
-                    <p class="text-gray-700 text-base leading-relaxed">
+                <div class="space-y-4">
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
                         {{ __('messages.about_team_description') }}
                     </p>
-                    <p class="text-gray-700 text-base leading-relaxed">
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
                         {{ __('messages.about_team_philosophy') }}
                     </p>
-                    <p class="text-gray-700 text-base leading-relaxed">
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
                         {{ __('messages.about_team_expertise') }}
                     </p>
                 </div>
-
-                <!-- Average Rating Section -->
-
             </div>
 
 

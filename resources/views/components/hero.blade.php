@@ -26,11 +26,10 @@
                 <!-- Left Statistic -->
                 <div class="text-center">
                     <div class="text-4xl font-bold text-[#2d5016] mb-4">
-                        <span class="counter" data-target="152" data-suffix="+">0+</span>
+                        <span class="counter" data-target="25" data-suffix="+">0+</span>
                     </div>
                     <div class="text-base text-[#2d5016]">
                         <div>{{ __('messages.projects_completed') }}</div>
-                        <div class="font-medium">{{ __('messages.countries') }}</div>
                     </div>
                 </div>
 
@@ -73,11 +72,10 @@
                     <!-- Left Statistic -->
                     <div class="text-left rtl:text-right">
                         <div class="text-5xl xl:text-6xl font-bold text-[#2d5016] mb-4">
-                            <span class="counter" data-target="152" data-suffix="+">0+</span>
+                            <span class="counter" data-target="25" data-suffix="+">0+</span>
                         </div>
                         <div class="text-lg xl:text-xl text-[#2d5016]">
                             <div>{{ __('messages.projects_completed') }}</div>
-                            <div class="font-medium">{{ __('messages.countries') }}</div>
                         </div>
                     </div>
 
@@ -99,46 +97,33 @@
     </div>
 
     <!-- Service Tags -->
+    @if($serviceTags->count() > 0)
     <div class="relative z-10 overflow-hidden">
         <!-- Mobile: Scrolling Loop -->
         <div class="md:hidden">
             <div class="service-tags-scroll">
                 <div class="flex gap-3 service-tags-container {{ app()->getLocale() === 'ar' ? 'rtl-scroll' : '' }}">
                     <!-- First set -->
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_development') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_consulting') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_network') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_database') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_support') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_audit') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_data') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_roadmap') }}</span>
+                    @foreach($serviceTags as $tag)
+                        <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ $tag->name }}</span>
+                    @endforeach
                     <!-- Duplicate set for seamless loop -->
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_development') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_consulting') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_network') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_database') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_support') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_audit') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_data') }}</span>
-                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ __('messages.service_roadmap') }}</span>
+                    @foreach($serviceTags as $tag)
+                        <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0">{{ $tag->name }}</span>
+                    @endforeach
                 </div>
             </div>
         </div>
         <!-- Desktop: Static Layout -->
         <div class="hidden md:block container mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-3 md:gap-4">
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_development') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_consulting') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_network') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_database') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_support') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_audit') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_data') }}</span>
-                <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ __('messages.service_roadmap') }}</span>
+                @foreach($serviceTags as $tag)
+                    <span class="px-4 py-2 bg-[#f0f5ec] text-[#2d5016] rounded-full text-sm font-medium hover:bg-[#2d5016] hover:text-white transition-colors cursor-pointer">{{ $tag->name }}</span>
+                @endforeach
             </div>
         </div>
     </div>
+    @endif
 
     <!-- FOLLOW Sidebar (Desktop Only) -->
     <div class="hidden lg:flex fixed {{ app()->getLocale() === 'ar' ? 'left-8' : 'right-8' }} top-40 z-20 flex-col items-center space-y-2">
@@ -155,13 +140,11 @@
                 <i class="fab fa-facebook-f text-lg"></i>
             </a>
             <!-- Pinterest Icon -->
-            <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Pinterest">
-                <i class="fab fa-pinterest-p text-lg"></i>
-            </a>
+            <a href="mailto:zalalham.sadeq@gmail.com" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Pinterest">
+                <i class="fa-solid fa-envelope text-lg"></i>            </a>
             <!-- Behance Icon -->
-            <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Behance">
-                <i class="fab fa-behance text-lg"></i>
-            </a>
+            <a href="tel:+967778826095" class="text-black hover:text-[#2d5016] transition-colors" aria-label="Behance">
+                <i class="fa-solid fa-phone text-lg"></i>            </a>
             <!-- LinkedIn Icon -->
             <a href="#" class="text-black hover:text-[#2d5016] transition-colors" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in text-lg"></i>

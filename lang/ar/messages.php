@@ -15,16 +15,16 @@ return [
     // Hero Section
     'hero_title_part1' => 'تطوير حلول',
     'hero_title_part2' => 'تقنية *جاهزة للمستقبل*',
-    'projects_completed' => 'مشروع مكتمل في',
+    'projects_completed' => 'مشروع مكتمل ',
     'countries' => '.25 دولة',
     'clients_satisfied' => 'عملاء راضون و',
     'repeating' => '.يعودون',
 
     // Information Section
     'information' => 'معلومات التواصل',
-    'phone' => '1007 7700 20 4 +',
-    'email' => 'hello@aleric.com',
-    'address' => 'Avenue de Roma 158b, Lisboa',
+    'phone' => '778826095, 775396896',
+    'email' => 'hello@NEXTLOOP.com',
+    'address' => 'اليمن- تعز ',
 
     // Follow Us
     'follow_us' => 'تابعنا',
@@ -51,7 +51,7 @@ return [
     'what_i_do' => 'ماذا أفعل',
     'average_rating' => 'التقييم المتوسط',
     'review_24' => 'مراجعة 24',
-    'testimonial_text' => "قدمت Aleric بالضبط ما كنا نحتاجه — حلول فعالة وموثوقة ومدفوعة بالنتائج. لقد شهدنا تحسينات قابلة للقياس منذ شراكتنا معهم. نحن نحول الأفكار إلى واقع بالإبداع والدقة والتأثير.",
+    'testimonial_text' => "قدمت NEXTLOOP بالضبط ما كنا نحتاجه — حلول فعالة وموثوقة ومدفوعة بالنتائج. لقد شهدنا تحسينات قابلة للقياس منذ شراكتنا معهم. نحن نحول الأفكار إلى واقع بالإبداع والدقة والتأثير.",
     'testimonial_author' => 'جون دو',
     'testimonial_role' => 'الرئيس التنفيذي، InnovateTech',
     'optimization' => 'التحسين',
@@ -78,7 +78,7 @@ return [
 
     // Projects Section
     'projects_tag' => 'المشاريع',
-    'projects_title' => 'موثوق به من قبل العلامات التجارية الرائدة: لقطات النجاح',
+    'projects_title' => 'نحول الأفكار إلى واقع رقمي متكامل',
     'get_started' => 'ابدأ الآن',
     'visit_site' => 'زيارة الموقع',
     'project_1_title' => 'تأثير قابل للقياس خلال ربع واحد',
@@ -109,21 +109,21 @@ return [
 
     // Team Section
     'our_team' => 'فريقنا',
-    'team_member_1_name' => 'ديان م. ماسون',
-    'team_member_1_role' => 'المسؤول القانوني',
-    'team_member_2_name' => 'مايكل توماس',
-    'team_member_2_role' => 'الرئيس التنفيذي Themepure',
+    'team_member_1_name' => 'دلال محمد',
+    'team_member_1_role' => 'مهندسة برمجيات' ,
+    'team_member_2_name' => ' زال الهم صادق',
+    'team_member_2_role' => ' مهندسة برمجيات ',
     'team_member_3_name' => 'جون سميث',
     'team_member_3_role' => 'الرئيس التقني',
     'team_member_4_name' => 'سارة جونسون',
     'team_member_4_role' => 'قائد التصميم',
     'team_heading' => 'فريقنا الخبير دائماً جاهز لمساعدتك',
-    'team_testimonial' => 'قدمت Aleric بالضبط ما كنا نحتاجه — حلول فعالة وموثوقة ومدفوعة بالنتائج. لقد شهدنا قابلة للقياس.',
+    'team_testimonial' => 'نحن ملتزمون بتقديم حلول تقنية مبتكرة تلبي تطلعاتك بأعلى معايير الجودة والكفاءة، ونسعى دائماً لبناء شراكات ناجحة تساهم في تحقيق أهدافك الرقمية.',
     'explore_more' => 'استكشف المزيد',
 
     // Footer Section
     'copyright' => 'حقوق النشر',
-    'company_name' => 'Aleric',
+    'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'جميع الحقوق محفوظة.',
     
     // Dashboard
@@ -157,5 +157,37 @@ return [
     'about' => 'من نحن',
     'services' => 'الخدمات',
     'team' => 'الفريق',
+    
+    // Services Management
+    'services_management' => 'إدارة الخدمات',
+    'all_services' => 'جميع الخدمات',
+    'add_service' => 'إضافة خدمة',
+    'edit_service' => 'تعديل خدمة',
+    'name_en' => 'الاسم (الإنجليزية)',
+    'name_ar' => 'الاسم (العربية)',
+    'title_en' => 'العنوان (الإنجليزية)',
+    'title_ar' => 'العنوان (العربية)',
+    'description_en' => 'الوصف (الإنجليزية)',
+    'description_ar' => 'الوصف (العربية)',
+    'icon' => 'الأيقونة',
+    'icon_placeholder' => 'فئة أيقونة Font Awesome (مثال: fas fa-code)',
+    'icon_hint' => 'أدخل فئة أيقونة Font Awesome أو مسار SVG',
+    'service_type_tag' => 'علامة (للقسم الرئيسي)',
+    'service_type_card' => 'بطاقة (لقسم الخدمات)',
+    'status' => 'الحالة',
+    'active' => 'نشط',
+    'inactive' => 'غير نشط',
+    'is_active' => 'نشط',
+    'no_services' => 'لا توجد خدمات.',
+    'confirm_delete_service' => 'هل أنت متأكد من حذف هذه الخدمة؟',
+    'service_created_successfully' => 'تم إنشاء الخدمة بنجاح.',
+    'service_updated_successfully' => 'تم تحديث الخدمة بنجاح.',
+    'service_deleted_successfully' => 'تم حذف الخدمة بنجاح.',
+    
+    // Projects Management Multilingual
+    'type_en' => 'النوع (الإنجليزية)',
+    'type_ar' => 'النوع (العربية)',
+    'project_created_successfully' => 'تم إنشاء المشروع بنجاح.',
+    'project_updated_successfully' => 'تم تحديث المشروع بنجاح.',
 ];
 

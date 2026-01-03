@@ -15,16 +15,16 @@ return [
     // Hero Section
     'hero_title_part1' => 'Developing Future-',
     'hero_title_part2' => 'Ready *It Solutions*',
-    'projects_completed' => 'Project Completed In',
+    'projects_completed' => 'Project Completed ',
     'countries' => '.Countries 25',
     'clients_satisfied' => 'Clients Satisfied And',
     'repeating' => '.Repeating',
 
     // Information Section
     'information' => 'INFORMATION',
-    'phone' => '1007 7700 20 4 +',
-    'email' => 'hello@aleric.com',
-    'address' => 'Avenue de Roma 158b, Lisboa',
+    'phone' => '778826095, 775396896',
+    'email' => 'hello@NEXTLOOP.com',
+    'address' => 'Yemen - Taiz',
 
     // Follow Us
     'follow_us' => 'FOLLOW US',
@@ -51,7 +51,7 @@ return [
     'what_i_do' => 'What I Do',
     'average_rating' => 'Average Rating',
     'review_24' => 'review 24',
-    'testimonial_text' => "Aleric delivered exactly what we needed — efficient, reliable, and results-driven solutions. We've seen measurable improvements since partnering with them we bring ideas to life with creativity, precision, and impact.",
+    'testimonial_text' => "NEXTLOOP delivered exactly what we needed — efficient, reliable, and results-driven solutions. We've seen measurable improvements since partnering with them we bring ideas to life with creativity, precision, and impact.",
     'testimonial_author' => 'John Doe',
     'testimonial_role' => 'CEO, InnovateTech',
     'optimization' => 'Optimization',
@@ -78,7 +78,7 @@ return [
 
     // Projects Section
     'projects_tag' => 'Projects',
-    'projects_title' => 'Trusted by Leading Brands: Success Snapshots',
+    'projects_title' => 'Transforming ideas into digital reality',
     'get_started' => 'Get Started',
     'visit_site' => 'Visit Site',
     'project_1_title' => 'Measurable impact within one quarter',
@@ -109,21 +109,21 @@ return [
 
     // Team Section
     'our_team' => 'Our Team',
-    'team_member_1_name' => 'Dianne M. Mason',
-    'team_member_1_role' => 'Legal Officer',
-    'team_member_2_name' => 'Michael Thomas',
+    'team_member_1_name' => 'Dalal Mohammed',
+    'team_member_1_role' => 'Software Engineer',
+    'team_member_2_name' => 'Zalalham Sadeq',
     'team_member_2_role' => 'CEO Themepure',
     'team_member_3_name' => 'John Smith',
     'team_member_3_role' => 'CTO',
     'team_member_4_name' => 'Sarah Johnson',
     'team_member_4_role' => 'Design Lead',
     'team_heading' => 'Our Experts Team Is Always Ready To Help You',
-    'team_testimonial' => 'Aleric delivered exactly what we needed — efficient, reliable, and results-driven solutions. We\'ve seen measurable.',
+    'team_testimonial' => 'Our team is dedicated to delivering innovative technical solutions that meet your expectations with the highest standards of quality and efficiency. We always strive to build successful partnerships that support your digital goals.',
     'explore_more' => 'EXPLORE MORE',
 
     // Footer Section
     'copyright' => 'Copyright',
-    'company_name' => 'Aleric',
+    'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'All rights reserved.',
     
     // Dashboard
@@ -157,5 +157,37 @@ return [
     'about' => 'About',
     'services' => 'Services',
     'team' => 'Team',
+    
+    // Services Management
+    'services_management' => 'Services Management',
+    'all_services' => 'All Services',
+    'add_service' => 'Add Service',
+    'edit_service' => 'Edit Service',
+    'name_en' => 'Name (English)',
+    'name_ar' => 'Name (Arabic)',
+    'title_en' => 'Title (English)',
+    'title_ar' => 'Title (Arabic)',
+    'description_en' => 'Description (English)',
+    'description_ar' => 'Description (Arabic)',
+    'icon' => 'Icon',
+    'icon_placeholder' => 'Font Awesome icon class (e.g., fas fa-code)',
+    'icon_hint' => 'Enter Font Awesome icon class or SVG path',
+    'service_type_tag' => 'Tag (for hero section)',
+    'service_type_card' => 'Card (for services section)',
+    'status' => 'Status',
+    'active' => 'Active',
+    'inactive' => 'Inactive',
+    'is_active' => 'Is Active',
+    'no_services' => 'No services found.',
+    'confirm_delete_service' => 'Are you sure you want to delete this service?',
+    'service_created_successfully' => 'Service created successfully.',
+    'service_updated_successfully' => 'Service updated successfully.',
+    'service_deleted_successfully' => 'Service deleted successfully.',
+    
+    // Projects Management Multilingual
+    'type_en' => 'Type (English)',
+    'type_ar' => 'Type (Arabic)',
+    'project_created_successfully' => 'Project created successfully.',
+    'project_updated_successfully' => 'Project updated successfully.',
 ];
 

@@ -34,13 +34,13 @@
             <!-- Right Side: Team Members -->
             <div class="relative">
                 <!-- Team Cards Container -->
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Team Member 1: Dianne M. Mason -->
                     <div class="tp-team-it-item bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group mb-12">
                         <a href="#" class="tp-team-it-thumb block relative overflow-hidden">
                             <!-- Gradient Background -->
                             <div class="absolute inset-0 bg-gradient-to-b from-white to-lime-400 rounded-t-xl"></div>
-                            <img src="https://via.placeholder.com/300x300" alt="{{ __('messages.team_member_1_name') }}" class="relative w-full h-80 object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-300">
+                            <img src="{{ asset('images/photo_2025-12-27_14-48-58.jpg') }}" alt="{{ __('messages.team_member_1_name') }}" class="relative w-full h-80 object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-300">
                         </a>
                         <div class="tp-team-it-content p-5 relative">
                             <div class="tp-team-it-socials absolute left-0 -top-8 z-10">
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="tp-team-it-socials-wrapper absolute left-0 bottom-full ">
                                     <ul class="tp-team-it-socials-icon bg-[#2d5016] rounded-lg px-2 py-3 flex flex-col gap-3">
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-pinterest text-sm"></i></a></li>
+                                        <li><a href="https://github.com/dalal-abdulghani" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fa-brands fa-github text-sm"></i></a></li></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-instagram text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
@@ -72,7 +72,7 @@
                         <a href="#" class="tp-team-it-thumb block relative overflow-hidden">
                             <!-- Gradient Background -->
                             <div class="absolute inset-0 bg-gradient-to-b from-white to-lime-400 rounded-t-xl"></div>
-                            <img src="https://via.placeholder.com/300x300" alt="{{ __('messages.team_member_1_name') }}" class="relative w-full h-80 object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-300">
+                            <img src="{{ asset('images/photo_2025-12-27_14-52-10.jpg') }}" alt="{{ __('messages.team_member_2_name') }}" class="relative w-full h-80 object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-300">
                         </a>
                         <div class="tp-team-it-content p-5 relative">
                             <div class="tp-team-it-socials absolute left-0 -top-8 z-10">
@@ -85,15 +85,15 @@
                                 </div>
                                 <div class="tp-team-it-socials-wrapper absolute left-0 bottom-full ">
                                     <ul class="tp-team-it-socials-icon bg-[#2d5016] rounded-lg px-2 py-3 flex flex-col gap-3">
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-pinterest text-sm"></i></a></li>
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
+                                        <li><a href="https://github.com/zalalham-Sadek" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fa-brands fa-github text-sm"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/zalalham-sadeq-07b088342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a></li>
                                         <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-instagram text-sm"></i></a></li>
-                                        <li><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
+                                        <li><a href="https://www.facebook.com/zalalham.sadeq" class="w-8 h-8 rounded-full flex items-center justify-center text-white hover:text-lime-400 transition-colors"><i class="fab fa-facebook text-sm"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <h3 class="font-semibold text-xl text-gray-800 mb-1 group-hover:text-[#2d5016] transition-colors">
-                                <a href="#" class="underline decoration-2 underline-offset-4 hover:decoration-[#2d5016] transition-colors">{{ __('messages.team_member_1_name') }}</a>
+                                <a href="#" class="underline decoration-2 underline-offset-4 hover:decoration-[#2d5016] transition-colors">{{ __('messages.team_member_2_name') }}</a>
                             </h3>
                             <span class="text-sm text-gray-600">{{ __('messages.team_member_1_role') }}</span>
                         </div>

@@ -33,8 +33,8 @@
         <!-- Right Side: Language Switcher (Desktop) & Logo -->
         <div class="flex items-center gap-4">
             <!-- Language Switcher (Desktop Only) -->
-            <a href="{{ route('language.switch', app()->getLocale() === 'ar' ? 'en' : 'ar') }}" 
-               class="hidden lg:flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-[#2d5016] hover:bg-gray-100 transition-all" 
+            <a href="{{ route('language.switch', app()->getLocale() === 'ar' ? 'en' : 'ar') }}"
+               class=" flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-[#2d5016] hover:bg-gray-100 transition-all"
                title="{{ __('messages.switch_language') }}">
                 <i class="fas fa-globe text-lg"></i>
             </a>
@@ -122,10 +122,10 @@
         <h3 class="text-black font-bold uppercase text-sm mb-4">{{ __('messages.information') }}</h3>
         <div class="space-y-3 text-sm text-gray-700">
             <div>
-                <a href="tel:+10077700204" class="underline hover:text-black transition-colors">{{ __('messages.phone') }}</a>
+                <a href="tel:+967778826095" class="underline hover:text-black transition-colors">{{ __('messages.phone') }}</a>
             </div>
             <div>
-                <a href="mailto:hello@aleric.com" class="hover:text-black transition-colors">{{ __('messages.email') }}</a>
+                <a href="mailto:zalalham.sadeq@gmail.com" class="hover:text-black transition-colors">{{ __('messages.email') }}</a>
             </div>
             <div>
                 <p>{{ __('messages.address') }}</p>
@@ -136,8 +136,31 @@
     <!-- Follow Us Section -->
     <div class="px-8 py-8 border-t border-gray-200">
         <h3 class="text-black font-bold uppercase text-sm mb-4">{{ __('messages.follow_us') }}</h3>
-        <div class="flex space-x-4 rtl:space-x-reverse">
-            <!-- Add social media icons here -->
+        <div class="flex flex-wrap gap-3">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-all duration-300 hover:scale-110 group" aria-label="Facebook">
+                <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <!-- Twitter/X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 hover:scale-110 group" aria-label="Twitter">
+                <i class="fab fa-x-twitter text-white"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 transition-all duration-300 hover:scale-110 group" aria-label="Instagram">
+                <i class="fab fa-instagram text-white"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110 group" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110 group" aria-label="YouTube">
+                <i class="fab fa-youtube text-white"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/778826095" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition-all duration-300 hover:scale-110 group" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp text-white"></i>
+            </a>
         </div>
     </div>
 </div>

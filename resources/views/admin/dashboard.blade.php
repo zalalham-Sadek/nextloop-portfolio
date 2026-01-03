@@ -22,6 +22,9 @@
                 <a href="{{ route('admin.projects.index') }}" class="block px-4 py-2 rounded-lg bg-[#1a3a0e] transition-colors">
                     <i class="fas fa-folder mr-2"></i> {{ __('messages.projects') }}
                 </a>
+                <a href="{{ route('admin.services.index') }}" class="block px-4 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors">
+                    <i class="fas fa-concierge-bell mr-2"></i> {{ __('messages.services') }}
+                </a>
                 <a href="{{ route('welcome') }}" class="block px-4 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors">
                     <i class="fas fa-globe mr-2"></i> {{ __('messages.view_site') }}
                 </a>
@@ -63,7 +66,12 @@
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             @if($project->image)
-                                                <img src="{{ \Illuminate\Support\Facades\Storage::url($project->image) }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded">
+                                                @php
+                                                    $imageUrl = \Illuminate\Support\Facades\Storage::disk('public')->exists($project->image) 
+                                                        ? \Illuminate\Support\Facades\Storage::disk('public')->url($project->image)
+                                                        : asset('storage/' . $project->image);
+                                                @endphp
+                                                <img src="{{ $imageUrl }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded" onerror="this.src=''; this.parentElement.innerHTML='<div class=\'w-16 h-16 bg-gray-200 rounded flex items-center justify-center\'><i class=\'fas fa-image text-gray-400\'></i></div>'">
                                             @else
                                                 <div class="w-16 h-16 bg-gray-200 rounded flex items-center justify-center">
                                                     <i class="fas fa-image text-gray-400"></i>
