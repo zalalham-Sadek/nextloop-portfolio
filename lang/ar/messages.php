@@ -116,10 +116,6 @@ return [
     'team_member_1_role' => 'مهندسة برمجيات' ,
     'team_member_2_name' => ' زال الهم صادق',
     'team_member_2_role' => ' مهندسة برمجيات ',
-    'team_member_1_name' => 'دلال محمد',
-    'team_member_1_role' => 'مهندسة برمجيات' ,
-    'team_member_2_name' => ' زال الهم صادق',
-    'team_member_2_role' => ' مهندسة برمجيات ',
     'team_member_3_name' => 'جون سميث',
     'team_member_3_role' => 'الرئيس التقني',
     'team_member_4_name' => 'سارة جونسون',
@@ -131,7 +127,6 @@ return [
 
     // Footer Section
     'copyright' => 'حقوق النشر',
-    'company_name' => 'NEXTLOOP',
     'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'جميع الحقوق محفوظة.',
 

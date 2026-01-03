@@ -16,7 +16,6 @@ return [
     'hero_title_part1' => 'Developing Future-',
     'hero_title_part2' => 'Ready *It Solutions*',
     'projects_completed' => 'Project Completed ',
-    'projects_completed' => 'Project Completed ',
     'countries' => '.Countries 25',
     'clients_satisfied' => 'Clients Satisfied And',
     'repeating' => '.Repeating',
@@ -81,7 +80,6 @@ return [
     // Projects Section
     'projects_tag' => 'Projects',
     'projects_title' => 'Transforming ideas into digital reality',
-    'projects_title' => 'Transforming ideas into digital reality',
     'get_started' => 'Get Started',
     'visit_site' => 'Visit Site',
     'project_1_title' => 'Measurable impact within one quarter',
@@ -115,10 +113,7 @@ return [
     'team_member_1_name' => 'Dalal Mohammed',
     'team_member_1_role' => 'Software Engineer',
     'team_member_2_name' => 'Zalalham Sadeq',
-    'team_member_1_name' => 'Dalal Mohammed',
-    'team_member_1_role' => 'Software Engineer',
-    'team_member_2_name' => 'Zalalham Sadeq',
-    'team_member_2_role' => 'CEO Themepure',
+    'team_member_2_role' => 'Software Engineer',
     'team_member_3_name' => 'John Smith',
     'team_member_3_role' => 'CTO',
     'team_member_4_name' => 'Sarah Johnson',
@@ -130,7 +125,6 @@ return [
 
     // Footer Section
     'copyright' => 'Copyright',
-    'company_name' => 'NEXTLOOP',
     'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'All rights reserved.',
 
