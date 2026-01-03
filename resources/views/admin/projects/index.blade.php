@@ -35,7 +35,7 @@
         <main class="ml-64 p-8">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">{{ __('messages.projects_management') }}</h2>
-                
+
                 @if(session('success'))
                     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
                         {{ session('success') }}
@@ -67,7 +67,7 @@
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             @if($project->image)
                                                 @php
-                                                    $imageUrl = \Illuminate\Support\Facades\Storage::disk('public')->exists($project->image) 
+                                                    $imageUrl = \Illuminate\Support\Facades\Storage::disk('public')->exists($project->image)
                                                         ? \Illuminate\Support\Facades\Storage::disk('public')->url($project->image)
                                                         : asset('storage/' . $project->image);
                                                 @endphp

@@ -16,6 +16,7 @@ return [
     'hero_title_part1' => 'تطوير حلول',
     'hero_title_part2' => 'تقنية *جاهزة للمستقبل*',
     'projects_completed' => 'مشروع مكتمل ',
+    'projects_completed' => 'مشروع مكتمل ',
     'countries' => '.25 دولة',
     'clients_satisfied' => 'عملاء راضون و',
     'repeating' => '.يعودون',
@@ -52,6 +53,7 @@ return [
     'average_rating' => 'التقييم المتوسط',
     'review_24' => 'مراجعة 24',
     'testimonial_text' => "قدمت NEXTLOOP بالضبط ما كنا نحتاجه — حلول فعالة وموثوقة ومدفوعة بالنتائج. لقد شهدنا تحسينات قابلة للقياس منذ شراكتنا معهم. نحن نحول الأفكار إلى واقع بالإبداع والدقة والتأثير.",
+    'testimonial_text' => "قدمت NEXTLOOP بالضبط ما كنا نحتاجه — حلول فعالة وموثوقة ومدفوعة بالنتائج. لقد شهدنا تحسينات قابلة للقياس منذ شراكتنا معهم. نحن نحول الأفكار إلى واقع بالإبداع والدقة والتأثير.",
     'testimonial_author' => 'جون دو',
     'testimonial_role' => 'الرئيس التنفيذي، InnovateTech',
     'optimization' => 'التحسين',
@@ -78,6 +80,7 @@ return [
 
     // Projects Section
     'projects_tag' => 'المشاريع',
+    'projects_title' => 'نحول الأفكار إلى واقع رقمي متكامل',
     'projects_title' => 'نحول الأفكار إلى واقع رقمي متكامل',
     'get_started' => 'ابدأ الآن',
     'visit_site' => 'زيارة الموقع',
@@ -113,19 +116,25 @@ return [
     'team_member_1_role' => 'مهندسة برمجيات' ,
     'team_member_2_name' => ' زال الهم صادق',
     'team_member_2_role' => ' مهندسة برمجيات ',
+    'team_member_1_name' => 'دلال محمد',
+    'team_member_1_role' => 'مهندسة برمجيات' ,
+    'team_member_2_name' => ' زال الهم صادق',
+    'team_member_2_role' => ' مهندسة برمجيات ',
     'team_member_3_name' => 'جون سميث',
     'team_member_3_role' => 'الرئيس التقني',
     'team_member_4_name' => 'سارة جونسون',
     'team_member_4_role' => 'قائد التصميم',
     'team_heading' => 'فريقنا الخبير دائماً جاهز لمساعدتك',
     'team_testimonial' => 'نحن ملتزمون بتقديم حلول تقنية مبتكرة تلبي تطلعاتك بأعلى معايير الجودة والكفاءة، ونسعى دائماً لبناء شراكات ناجحة تساهم في تحقيق أهدافك الرقمية.',
+    'team_testimonial' => 'نحن ملتزمون بتقديم حلول تقنية مبتكرة تلبي تطلعاتك بأعلى معايير الجودة والكفاءة، ونسعى دائماً لبناء شراكات ناجحة تساهم في تحقيق أهدافك الرقمية.',
     'explore_more' => 'استكشف المزيد',
 
     // Footer Section
     'copyright' => 'حقوق النشر',
     'company_name' => 'NEXTLOOP',
+    'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'جميع الحقوق محفوظة.',
-    
+
     // Dashboard
     'dashboard' => 'لوحة التحكم',
     'projects' => 'المشاريع',
@@ -151,13 +160,13 @@ return [
     'current_image' => 'الصورة الحالية',
     'new_image' => 'صورة جديدة',
     'switch_language' => 'تبديل اللغة',
-    
+
     // Navigation
     'home' => 'الرئيسية',
     'about' => 'من نحن',
     'services' => 'الخدمات',
     'team' => 'الفريق',
-    
+
     // Services Management
     'services_management' => 'إدارة الخدمات',
     'all_services' => 'جميع الخدمات',
@@ -183,7 +192,7 @@ return [
     'service_created_successfully' => 'تم إنشاء الخدمة بنجاح.',
     'service_updated_successfully' => 'تم تحديث الخدمة بنجاح.',
     'service_deleted_successfully' => 'تم حذف الخدمة بنجاح.',
-    
+
     // Projects Management Multilingual
     'type_en' => 'النوع (الإنجليزية)',
     'type_ar' => 'النوع (العربية)',

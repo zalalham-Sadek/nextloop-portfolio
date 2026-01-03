@@ -10,7 +10,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-start">
             <!-- Left Side: Text and Button -->
             <div class="space-y-8">
-               
+
 
                 <!-- Main Heading -->
                 <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2d5016] leading-tight">

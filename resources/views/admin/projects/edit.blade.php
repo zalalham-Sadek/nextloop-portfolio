@@ -113,12 +113,7 @@
                         @if($project->image)
                             <div class="mb-6">
                                 <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.current_image') }}</label>
-                                @php
-                                    $imageUrl = \Illuminate\Support\Facades\Storage::disk('public')->exists($project->image) 
-                                        ? \Illuminate\Support\Facades\Storage::disk('public')->url($project->image)
-                                        : asset('storage/' . $project->image);
-                                @endphp
-                                <img src="{{ $imageUrl }}" alt="{{ $project->name }}" class="w-32 h-32 object-cover rounded" onerror="this.style.display='none'; this.parentElement.innerHTML+='<p class=\'text-red-500 text-sm mt-2\'>{{ __('messages.image_not_found') }}</p>';">
+                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-32 h-32 object-cover rounded">
                             </div>
                         @endif
 

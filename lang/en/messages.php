@@ -16,6 +16,7 @@ return [
     'hero_title_part1' => 'Developing Future-',
     'hero_title_part2' => 'Ready *It Solutions*',
     'projects_completed' => 'Project Completed ',
+    'projects_completed' => 'Project Completed ',
     'countries' => '.Countries 25',
     'clients_satisfied' => 'Clients Satisfied And',
     'repeating' => '.Repeating',
@@ -52,6 +53,7 @@ return [
     'average_rating' => 'Average Rating',
     'review_24' => 'review 24',
     'testimonial_text' => "NEXTLOOP delivered exactly what we needed — efficient, reliable, and results-driven solutions. We've seen measurable improvements since partnering with them we bring ideas to life with creativity, precision, and impact.",
+    'testimonial_text' => "NEXTLOOP delivered exactly what we needed — efficient, reliable, and results-driven solutions. We've seen measurable improvements since partnering with them we bring ideas to life with creativity, precision, and impact.",
     'testimonial_author' => 'John Doe',
     'testimonial_role' => 'CEO, InnovateTech',
     'optimization' => 'Optimization',
@@ -78,6 +80,7 @@ return [
 
     // Projects Section
     'projects_tag' => 'Projects',
+    'projects_title' => 'Transforming ideas into digital reality',
     'projects_title' => 'Transforming ideas into digital reality',
     'get_started' => 'Get Started',
     'visit_site' => 'Visit Site',
@@ -112,6 +115,9 @@ return [
     'team_member_1_name' => 'Dalal Mohammed',
     'team_member_1_role' => 'Software Engineer',
     'team_member_2_name' => 'Zalalham Sadeq',
+    'team_member_1_name' => 'Dalal Mohammed',
+    'team_member_1_role' => 'Software Engineer',
+    'team_member_2_name' => 'Zalalham Sadeq',
     'team_member_2_role' => 'CEO Themepure',
     'team_member_3_name' => 'John Smith',
     'team_member_3_role' => 'CTO',
@@ -119,13 +125,15 @@ return [
     'team_member_4_role' => 'Design Lead',
     'team_heading' => 'Our Experts Team Is Always Ready To Help You',
     'team_testimonial' => 'Our team is dedicated to delivering innovative technical solutions that meet your expectations with the highest standards of quality and efficiency. We always strive to build successful partnerships that support your digital goals.',
+    'team_testimonial' => 'Our team is dedicated to delivering innovative technical solutions that meet your expectations with the highest standards of quality and efficiency. We always strive to build successful partnerships that support your digital goals.',
     'explore_more' => 'EXPLORE MORE',
 
     // Footer Section
     'copyright' => 'Copyright',
     'company_name' => 'NEXTLOOP',
+    'company_name' => 'NEXTLOOP',
     'all_rights_reserved' => 'All rights reserved.',
-    
+
     // Dashboard
     'dashboard' => 'Dashboard',
     'projects' => 'Projects',
@@ -151,13 +159,13 @@ return [
     'current_image' => 'Current Image',
     'new_image' => 'New Image',
     'switch_language' => 'Switch Language',
-    
+
     // Navigation
     'home' => 'Home',
     'about' => 'About',
     'services' => 'Services',
     'team' => 'Team',
-    
+
     // Services Management
     'services_management' => 'Services Management',
     'all_services' => 'All Services',
@@ -183,7 +191,7 @@ return [
     'service_created_successfully' => 'Service created successfully.',
     'service_updated_successfully' => 'Service updated successfully.',
     'service_deleted_successfully' => 'Service deleted successfully.',
-    
+
     // Projects Management Multilingual
     'type_en' => 'Type (English)',
     'type_ar' => 'Type (Arabic)',
