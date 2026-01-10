@@ -26,7 +26,8 @@ class Project extends Model
      */
     public function getNameAttribute()
     {
-        if (app()->getLocale() === 'ar' && $this->attributes['name_ar'] ?? null) {
+        $locale = app()->getLocale();
+        if ($locale === 'ar' && !empty($this->attributes['name_ar'] ?? null)) {
             return $this->attributes['name_ar'];
         }
         return $this->attributes['name_en'] ?? $this->attributes['name'] ?? '';
@@ -37,7 +38,8 @@ class Project extends Model
      */
     public function getDescriptionAttribute()
     {
-        if (app()->getLocale() === 'ar' && $this->attributes['description_ar'] ?? null) {
+        $locale = app()->getLocale();
+        if ($locale === 'ar' && !empty($this->attributes['description_ar'] ?? null)) {
             return $this->attributes['description_ar'];
         }
         return $this->attributes['description_en'] ?? $this->attributes['description'] ?? '';
@@ -48,7 +50,8 @@ class Project extends Model
      */
     public function getTypeAttribute()
     {
-        if (app()->getLocale() === 'ar' && $this->attributes['type_ar'] ?? null) {
+        $locale = app()->getLocale();
+        if ($locale === 'ar' && !empty($this->attributes['type_ar'] ?? null)) {
             return $this->attributes['type_ar'];
         }
         return $this->attributes['type_en'] ?? $this->attributes['type'] ?? '';

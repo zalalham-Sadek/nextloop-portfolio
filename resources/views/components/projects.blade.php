@@ -28,7 +28,11 @@
                                    <!-- Project Image -->
                                    <div class="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
                                        @if($project->image)
-                                           <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-full h-full object-cover" onerror="this.src=''; this.parentElement.innerHTML='<div class=\'w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center\'><i class=\'fas fa-image text-gray-400 text-4xl\'></i></div>'">
+                                           @php
+                                               // Use asset() for better compatibility with symbolic links
+                                               $imageUrl = asset('storage/' . $project->image);
+                                           @endphp
+                                           <img src="{{ $imageUrl }}" alt="{{ $project->name }}" class="w-full h-full object-cover" onerror="if(this.parentElement){this.style.display='none';if(!this.parentElement.querySelector('.error-placeholder')){var div=document.createElement('div');div.className='w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center error-placeholder';div.innerHTML='<i class=\'fas fa-image text-gray-400 text-4xl\'></i>';this.parentElement.appendChild(div)}}">
                                        @else
                                            <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                                                <i class="fas fa-image text-gray-400 text-4xl"></i>

@@ -82,3 +82,7 @@ echo "  2. Set APP_ENV=production in .env"
 echo "  3. Verify APP_URL is correct in .env"
 echo "  4. Test the website thoroughly"
 
+
+
+
+

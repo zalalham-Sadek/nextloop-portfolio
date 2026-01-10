@@ -42,6 +42,16 @@
 
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">{{ __('messages.edit_project') }}</h2>
 
+                @if($errors->any())
+                    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                        <ul class="list-disc list-inside">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <form action="{{ route('admin.projects.update', $project) }}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -113,7 +123,17 @@
                         @if($project->image)
                             <div class="mb-6">
                                 <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.current_image') }}</label>
-                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-32 h-32 object-cover rounded">
+                                @if($project->image)
+                                    @php
+                                        // Use asset() for better compatibility with symbolic links
+                                        $imageUrl = asset('storage/' . $project->image);
+                                    @endphp
+                                    <div class="relative">
+                                        <img src="{{ $imageUrl }}" alt="{{ $project->name }}" class="w-32 h-32 object-cover rounded border" onerror="if(this.parentElement){this.style.display='none';if(!this.parentElement.querySelector('.error-message')){var p=document.createElement('p');p.className='text-red-500 text-sm mt-2 error-message';p.textContent='{{ __('messages.image_not_found') ?? 'الصورة غير موجودة' }}';this.parentElement.appendChild(p)}}">
+                                    </div>
+                                @else
+                                    <p class="text-gray-500 text-sm">{{ __('messages.no_image') ?? 'لا توجد صورة' }}</p>
+                                @endif
                             </div>
                         @endif
 
@@ -150,8 +170,11 @@
 
                         <!-- Submit Button -->
                         <div class="flex gap-4">
-                            <button type="submit" class="bg-[#2d5016] text-white px-6 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors">
-                                {{ __('messages.update') }}
+                            <button type="submit" id="submit-btn" class="bg-[#2d5016] text-white px-6 py-2 rounded-lg hover:bg-[#1a3a0e] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
+                                <span id="submit-text">{{ __('messages.update') }}</span>
+                                <span id="submit-spinner" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
                             </button>
                             <a href="{{ route('admin.projects.index') }}" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition-colors">
                                 {{ __('messages.cancel') }}
@@ -162,6 +185,116 @@
             </div>
         </main>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form[method="POST"]');
+            const submitBtn = document.getElementById('submit-btn');
+            const submitText = document.getElementById('submit-text');
+            const submitSpinner = document.getElementById('submit-spinner');
+            const imageInput = document.getElementById('image');
+            let isSubmitting = false;
+            
+            // Image preview for new image
+            if (imageInput) {
+                imageInput.addEventListener('change', function(e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                        // Check file size
+                        const maxSize = 2 * 1024 * 1024; // 2MB
+                        if (file.size > maxSize) {
+                            alert('{{ __("messages.file_too_large") ?? "حجم الملف كبير جداً. الحد الأقصى 2 ميجابايت" }}');
+                            e.target.value = '';
+                            // Remove preview if exists
+                            const existingPreview = document.getElementById('image-preview');
+                            if (existingPreview) {
+                                existingPreview.remove();
+                            }
+                            return;
+                        }
+                        
+                        // Check file type
+                        if (!file.type.match('image.*')) {
+                            alert('{{ __("messages.invalid_image_type") ?? "نوع الملف غير مدعوم. يرجى رفع صورة" }}');
+                            e.target.value = '';
+                            const existingPreview = document.getElementById('image-preview');
+                            if (existingPreview) {
+                                existingPreview.remove();
+                            }
+                            return;
+                        }
+                        
+                        // Show preview
+                        const reader = new FileReader();
+                        reader.onload = function(event) {
+                            let preview = document.getElementById('image-preview');
+                            if (!preview) {
+                                preview = document.createElement('div');
+                                preview.id = 'image-preview';
+                                preview.className = 'mt-2';
+                                imageInput.parentElement.appendChild(preview);
+                            }
+                            preview.innerHTML = `
+                                <img src="${event.target.result}" alt="Preview" class="w-32 h-32 object-cover rounded border">
+                                <p class="text-sm text-gray-500 mt-1">${file.name} (${(file.size / 1024).toFixed(2)} KB)</p>
+                            `;
+                        };
+                        reader.onerror = function() {
+                            alert('{{ __("messages.error_reading_file") ?? "خطأ في قراءة الملف" }}');
+                            e.target.value = '';
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        // Remove preview if no file selected
+                        const existingPreview = document.getElementById('image-preview');
+                        if (existingPreview) {
+                            existingPreview.remove();
+                        }
+                    }
+                });
+            }
+            
+            // Form submission
+            if (form && submitBtn) {
+                form.addEventListener('submit', function(e) {
+                    // Prevent double submission
+                    if (isSubmitting) {
+                        e.preventDefault();
+                        return false;
+                    }
+                    
+                    // Validate form before showing loading
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+                    
+                    // Show loading state
+                    isSubmitting = true;
+                    submitBtn.disabled = true;
+                    if (submitText) {
+                        submitText.textContent = '{{ __("messages.uploading") ?? "جاري الرفع..." }}';
+                    }
+                    if (submitSpinner) {
+                        submitSpinner.classList.remove('hidden');
+                    }
+                    
+                    // Allow form to submit normally
+                    // The loading state will reset when page reloads after redirect
+                });
+            }
+            
+            // Reset loading state if form validation fails (browser will stop submission)
+            if (form) {
+                form.addEventListener('invalid', function(e) {
+                    isSubmitting = false;
+                    if (submitBtn) submitBtn.disabled = false;
+                    if (submitText) submitText.textContent = '{{ __("messages.update") ?? "تحديث" }}';
+                    if (submitSpinner) submitSpinner.classList.add('hidden');
+                }, true);
+            }
+        });
+    </script>
 </body>
 </html>
 

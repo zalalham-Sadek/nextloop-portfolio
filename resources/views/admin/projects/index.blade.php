@@ -66,7 +66,13 @@
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             @if($project->image)
-                                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded" onerror="this.src=''; this.parentElement.innerHTML='<div class=\'w-16 h-16 bg-gray-200 rounded flex items-center justify-center\'><i class=\'fas fa-image text-gray-400\'></i></div>'">
+                                                @php
+                                                    // Use asset() for better compatibility with symbolic links
+                                                    $imageUrl = asset('storage/' . $project->image);
+                                                @endphp
+                                                <div class="w-16 h-16 bg-gray-200 rounded flex items-center justify-center relative overflow-hidden">
+                                                    <img src="{{ $imageUrl }}" alt="{{ $project->name }}" class="w-16 h-16 object-cover rounded" onerror="if(this.parentElement){this.style.display='none';if(!this.parentElement.querySelector('.error-placeholder')){var icon=document.createElement('i');icon.className='fas fa-image text-gray-400 error-placeholder';this.parentElement.appendChild(icon)}}">
+                                                </div>
                                             @else
                                                 <div class="w-16 h-16 bg-gray-200 rounded flex items-center justify-center">
                                                     <i class="fas fa-image text-gray-400"></i>

@@ -75,3 +75,7 @@ DB::connection()->getPdo();
 
 4. **إعدادات MySQL**: تأكد من أن MySQL service يعمل قبل تشغيل migrations
 
+
+
+
+

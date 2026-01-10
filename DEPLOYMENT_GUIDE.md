@@ -376,3 +376,7 @@ php artisan route:cache
 
 **ملاحظة:** تأكد من أن PHP version على السيرفر هو 8.2 أو أحدث!
 
+
+
+
+
